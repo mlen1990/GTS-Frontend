@@ -1,0 +1,54 @@
+div.resume {
+	width: 85%;
+	margin: 85px 75px 85px 75px;
+}
+
+div.resume-name {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+div.resume-line {
+	min-height: 22px;
+	font-size: 18px;
+}
+
+div.resume-address {
+	text-align: center;
+	font-size: 23px;
+	margin-bottom: 5px;
+}
+
+div.resume-line.indent {
+	margin-left: 75px;
+}
+
+div.resume-header {
+	border-bottom:1px solid black;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+ul.resume-list {
+	margin-top: 0px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+div.resume-line div.resume-skill-type {
+	width: 25%;
+	display: inline-block;
+	font-weight: bold;
+}
+
+div.resume-skills {
+	display: inline-block;
+}
