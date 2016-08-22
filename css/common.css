@@ -1,3 +1,66 @@
+div.navBar {
+	position: relative;
+	height: 50px;
+}
+
+ul.horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+li.horizontal-list-item .horizontal-list-toolTip {
+	visibility: hidden;
+    min-width: 200px;
+    background-color: black;
+    color: #fff;
+    list-style-type: none;
+    padding-left: 0px;
+    /* Position the tooltip */
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+}
+
+li.horizontal-list-item {
+	float: left;
+}
+
+a.horizontal-list-link {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+a.horizontal-list-link:hover {
+    background-color: #111111;
+}
+
+li.horizontal-list-item:hover .horizontal-list-toolTip {
+    visibility: visible;
+}
+
+.horizontal-list-toolTip-item {
+	padding: 5px 15px 5px 15px;
+}
+
+.horizontal-list-toolTip-item:hover {
+	background-color: #333333;
+}
+
+.horizontal-list-toolTip-link {
+	color: white;
+	text-decoration: none;
+}
+
 div.padding {
 	padding: 10px;
 }
