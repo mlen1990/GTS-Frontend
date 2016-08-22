@@ -82,6 +82,36 @@ a.resume-list-link {
     text-decoration: none;
 }
 
+li.resume-list-item .resume-toolTip {
+	visibility: hidden;
+    min-width: 200px;
+    background-color: black;
+    color: #fff;
+    list-style-type: none;
+    padding-left: 0px;
+    /* Position the tooltip */
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+}
+
+li.resume-list-item:hover .resume-toolTip {
+    visibility: visible;
+}
+
+.resume-toolTip-item {
+	padding: 5px 15px 5px 15px;
+}
+
+.resume-toolTip-item:hover {
+	background-color: #333333;
+}
+
+.resume-toolTip-link {
+	color: white;
+	text-decoration: none;
+}
+
 a.resume-list-link:hover {
     background-color: #111111;
 }

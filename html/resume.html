@@ -8,9 +8,22 @@
 		<div id="home" class="navBar">
 			<ul class="resume-horizontal-list">
 				<li class="resume-list-item"><a class="resume-list-link" href="#home">Home</a></li>
-				<li class="resume-list-item"><a class="resume-list-link" href="#education">Education</a></li>
-				<li class="resume-list-item"><a class="resume-list-link" href="#projects">Projects</a></li>
-				<li class="resume-list-item"><a class="resume-list-link" href="#skills">Skills</a></li>
+				<li class="resume-list-item">
+					<a class="resume-list-link" href="#education">Education</a>
+				</li>
+				<li class="resume-list-item">
+					<ul class="resume-toolTip">
+						<li class="resume-toolTip-item"><a class="resume-toolTip-link" href="#dataManagement">Data Management</a></li>
+						<li class="resume-toolTip-item"><a class="resume-toolTip-link" href="#dataStore">Distributed Key-Value Datastore</a></li>
+						<li class="resume-toolTip-item"><a class="resume-toolTip-link" href="#directoryTraversal">Multithreaded Directory Traversal</a></li>
+						<li class="resume-toolTip-item"><a class="resume-toolTip-link" href="#postgres">PostgreSQL Modifications</a></li>
+						<li class="resume-toolTip-item"><a class="resume-toolTip-link" href="#twitterVariant">Twitter Variant</a></li>
+					</ul>
+					<a class="resume-list-link" href="#projects">Projects</a>
+				</li>
+				<li class="resume-list-item">
+					<a class="resume-list-link" href="#skills">Skills</a>
+				</li>
 			</ul>
 		</div>
 		<div class="resume">
@@ -29,7 +42,7 @@
 			</div>
 			<div id="projects" class="resume-line"></div>
 			<div class="resume-line"><b>Relevant Coursework</b></div>
-			<div class="resume-line indent">Operating Systems, Data Structures, Database Systems, Algorithms, Computer Security, Computer Graphics, Artificial Intelligence</div>
+			<div id="dataManagement" class="resume-line indent">Operating Systems, Data Structures, Database Systems, Algorithms, Computer Security, Computer Graphics, Artificial Intelligence</div>
 			<div class="resume-header">PROJECTS</div>
 			<div class="resume-line">
 				<span class="pull-left"><b>Data Management</b></span>
@@ -38,7 +51,7 @@
 			<div class="resume-line">
 				<ul class="resume-list">
 					<li>Wrote an automation script in Ruby to generate CSV files from a large directory of email messages</li>
-					<li>Developed an algorithm to handle data sets far larger than the computer's available memory</li>
+					<li id="dataStore">Developed an algorithm to handle data sets far larger than the computer's available memory</li>
 					<li>Utilized UNIX utilities to reduce the script's running time from 5 minutes to 90 seconds</li>
 				</ul>
 			</div>
@@ -52,7 +65,7 @@
 					<li>Wrote an XML parsing library to parse, generate, send, and receive incoming XML</li>
 					<li>Implemented client-server communication over Java TCP sockets</li>
 					<li>Developed a fault tolerant algorithm by replicating data across multiple servers</li>
-					<li>Backed up server data by creating a persistent storage which can recover server state in the event of a system failure</li>
+					<li id="directoryTraversal">Backed up server data by creating a persistent storage which can recover server state in the event of a system failure</li>
 					<li>Designed extensive multithreaded integration and unit tests in JUnit</li>
 				</ul>
 			</div>
@@ -63,7 +76,7 @@
 			<div class="resume-line">
 				<ul class="resume-list">
 					<li>Developed a multithreaded Java program such that each thread's job is to traverse the next available top level directory</li>
-					<li>Stored each filename and its top level directory in a MySQL database using JDBC</li>
+					<li id="postgres">Stored each filename and its top level directory in a MySQL database using JDBC</li>
 					<li>Established concurrency by synchronizing shared resources among threads</li>
 				</ul>
 			</div>
@@ -73,7 +86,7 @@
 			</div>
 			<div class="resume-line">
 				<ul class="resume-list">
-					<li>Developed three additional buffer replacement policies to the buffer manager: LRU, MRU, and 2Q</li>
+					<li id="twitterVariant">Developed three additional buffer replacement policies to the buffer manager: LRU, MRU, and 2Q</li>
 					<li>Ran benchmarks on a fixed data set to compare the performance of each policy</li>
 				</ul>
 			</div>
