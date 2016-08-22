@@ -1,3 +1,8 @@
+div.navBar {
+	position: relative;
+	height: 50px;
+}
+
 div.resume {
 	width: 85%;
 	margin: 85px 75px 85px 75px;
@@ -51,4 +56,32 @@ div.resume-line div.resume-skill-type {
 
 div.resume-skills {
 	display: inline-block;
+}
+
+ul.resume-horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+li.resume-list-item {
+	float: left;
+}
+
+a.resume-list-link {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+a.resume-list-link:hover {
+    background-color: #111111;
 }

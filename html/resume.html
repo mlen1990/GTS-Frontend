@@ -5,10 +5,16 @@
 		<link rel="stylesheet" type="text/css" href="../css/resume.css">
 	</head>
 	<body>
+		<div id="home" class="navBar">
+			<ul class="resume-horizontal-list">
+				<li class="resume-list-item"><a class="resume-list-link" href="#home">Home</a></li>
+				<li class="resume-list-item"><a class="resume-list-link" href="#education">Education</a></li>
+				<li class="resume-list-item"><a class="resume-list-link" href="#projects">Projects</a></li>
+				<li class="resume-list-item"><a class="resume-list-link" href="#skills">Skills</a></li>
+			</ul>
+		</div>
 		<div class="resume">
-			<div class="resume-name">
-				Martin Len
-			</div>
+			<div id="education" class="resume-name">Martin Len</div>
 			<div class="resume-address">
 				301 Holly Oak, Alameda, CA, 94501 | mlen1990@gmail.com | (408) 489-2938
 			</div>
@@ -21,7 +27,7 @@
 				<span class="pull-left">B.S. Electrical Engineering &amp; Computer Science</span>
 				<span class="pull-right">May 2013</span>
 			</div>
-			<div class="resume-line"></div>
+			<div id="projects" class="resume-line"></div>
 			<div class="resume-line"><b>Relevant Coursework</b></div>
 			<div class="resume-line indent">Operating Systems, Data Structures, Database Systems, Algorithms, Computer Security, Computer Graphics, Artificial Intelligence</div>
 			<div class="resume-header">PROJECTS</div>
@@ -78,7 +84,7 @@
 			<div class="resume-line">
 				<ul class="resume-list">
 					<li>Built the backend of a twitter-like web application using Ruby on Rails to enable users to follow locations and user interaction through tweets</li>
-					<li>Designed the database schema by using Activerecord to define the relationship between models</li>
+					<li id="skills">Designed the database schema by using Activerecord to define the relationship between models</li>
 					<li>Generated SQL queries to report interesting statistics, such as the top five posters</li>
 				</ul>
 			</div>
