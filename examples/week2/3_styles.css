@@ -1,0 +1,14 @@
+/* Change the background color of the body tag */
+body {
+	background-color: powderblue;
+}
+
+/* Change the text color of all h1 tags to blue */
+h1 {
+	color: blue;
+}
+
+/* Change the text color of all paragraphs to red */
+p {
+	color: red;
+}
