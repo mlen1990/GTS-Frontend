@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS: Class Attribute</title>
+		<style>
+			/* Any element with class="test" will have these styles */
+			.box {
+				border: 1px solid black;
+			}
+
+			/* A class just for paragraphs */
+			p.blue-text {
+				color: blue;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<p>This paragraph does not have a class</p>
+
+		<p class="box">This paragraph does has the box class</p>
+
+		<p class="box blue-text">This paragraph does has multiple classes. They are "box" and "blue-text"</p>
+
+		<h1 class="blue-text">This header tag has the "blue-text" class but the CSS isn't applied to it</h1>
+
+		<p class="test">This paragraph has a class but isn't defined yet.</p>
+
+	</body>
+</html>
