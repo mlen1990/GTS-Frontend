@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>jQuery Double Click Events</title>
+		<title>jQuery Hover Event</title>
 
 		<style>
 
-			button.button {
-		        color: #174A7C;
-			    font-weight: bold;
-			    padding: 6px 12px;
-			    cursor: pointer;
-			    background-color: white;
-			    transition: 0.1s;
-			    border: 1px solid #174A7C;
-			}
-
-			button.button:hover {
+			.red-background {
+				background-color: red;
 				color: white;
-				background-color: #174A7C;
 			}
 
 		</style>
@@ -29,11 +19,14 @@
 			$(function() {
 
 				// Select all button elements and attach a double click event handler to them
-			    $("button").dblclick(function() {
+			    $("p").hover(function() {
 
 			    	// Hide something
-			        $('#test').hide();
-			        
+			        $(this).addClass('red-background');
+			    }, function() {
+
+			    	$(this).removeClass('red-background');
+
 			    });
 
 			});
@@ -49,7 +42,7 @@
 
 		<p class="text my-paragraph">This is another paragraph!</p>
 
-		<button class="button">Hide</button>
+		<div id="testDiv" style="display:none">This is a test div.</div>
 
 	</body>
 </html>
