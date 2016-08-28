@@ -1,0 +1,130 @@
+table.half-size {
+	width: 50%;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+	border: 1px solid black;
+}
+
+span.add-item {
+	display: inline-block;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+ul.horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li.horizontal-list-item {
+    float: left;
+    margin-right: 20px;
+}
+
+/*li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+*/
+li.horizontal-list-item:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+div.panel {
+	border: 1px solid black;
+	margin-bottom: 20px;
+    font-weight: bold;
+}
+
+div.panel.small {
+	width: 25%;
+}
+
+div.panel-header-container {
+    background-color: #5B7DA8;
+    color: white;
+	border-bottom: 1px solid black;
+}
+
+div.panel-header {
+	padding: 5px 5px 5px 10px;
+    width: 90%;
+    display: inline-block;
+}
+
+div.cancel {
+	width: 2%;
+	text-align: right;
+	display: inline-block;
+	font: 20px/100% arial, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.cancel:after {
+	content: 'x';
+}
+
+div.label {
+	width: 25%;
+	display: inline-block;
+	color: #5B7DA8;
+}
+
+div.label-input-container {
+	width: 50%;
+	display: inline-block;
+}
+
+ul.panel-list {
+	list-style-type: none;
+	margin: 0;
+    padding: 10px;
+}
+
+li.panel-list-item {
+	padding: 5px;
+}
+
+div.panel-footer {
+    color: #5B7DA8;
+    text-align: right;
+	border-top: 1px solid black;
+	padding: 10px;
+}
+
+button.panel-button {
+	color: #174A7C;
+    font-weight: bold;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.1s;
+    border: 1px solid #174A7C;
+}
+
+button.panel-button:hover {
+	color: white;
+	background-color: #5B7DA8
+}

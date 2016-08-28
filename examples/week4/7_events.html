@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>jQuery Events</title>
+
+
+		<!-- This is how you include jQuery -->
+		<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="7_events.js"></script>
+		<link rel="stylesheet" href="7_events.css">
+
+	</head>
+	<body>
+		<ul class="horizontal-list">
+            <li id="add-item" class="horizontal-list-item"><span class="add-item">+</span>Add Item</li>
+        </ul>
+        <div id="add-item-panel" class="panel small hidden">
+        	<div class="panel-header-container">
+	        	<div class="panel-header">Add Item</div>
+	        	<div id="cancel" class="cancel"></div>
+        	</div>
+        	<ul class="panel-list">
+	            <li class="panel-list-item">
+	            	<div class="label">Item:</div><div class="label-input-container"><input id="table-item" type="text"></div>
+	            </li>
+	            <li class="panel-list-item">
+	            	<div class="label">Quantity:</div><div class="label-input-container"><input id="table-quantity" type="text"></div>
+	            </li>
+	            <li class="panel-list-item">
+	            	<div class="label">Cost:</div><div class="label-input-container"><input id="table-cost" type="text"></div>
+	            </li>
+	        </ul>
+	        <div class="panel-footer">
+	        	<button id="save-item" class="panel-button">Add</button>
+	    	</div>
+        </div>
+		<table id="shoppingList" class="half-size">
+			<tbody>
+
+				<tr>
+					<td>Item</td>
+					<td>Quantity</td>
+					<td>Cost</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Apples</td>
+					<td>10</td>
+					<td>$0.25</td>
+					<td>$2.5</td>
+				</tr>
+				<tr>
+					<td>Oranges</td>
+					<td>10</td>
+					<td>$0.35</td>
+					<td>$3.5</td>
+				</tr>
+				<tr>
+					<td>Pineapple</td>
+					<td>3</td>
+					<td>$0.45</td>
+					<td>$1.35</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</body>
+</html>
