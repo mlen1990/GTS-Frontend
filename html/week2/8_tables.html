@@ -6,8 +6,8 @@
 			/*table.half-size {
 				width: 50%;
 				border-collapse: collapse;
-			}
-			th {
+			}*/
+			/*th {
 				text-align: left;
 				padding: 10px;
 				border: 1px solid black;
@@ -15,29 +15,29 @@
 			td {
 				padding: 10px;
 				border: 1px solid black;
-			}
-
-			tr.table-row:nth-child(3n+0) {
-				background: red;
-			}
-
-			tr.table-row:nth-child(3n+1) {
-				background: blue;
-			}
-
-			tr.table-row:nth-child(3n+2) {
-				background: green;
 			}*/
 
-			/* I put this last so that the blue background is replaced with a white background */
-			/*
-			tr.table-row:first-child {
-				background: white;
-			}
 
+			/* Make every first <tr> tag blue */
+			/*tr.table-row:nth-child(3n+1) {
+				color: blue;
+			}*/
+
+			/* Make every second <tr> tag green */
+			/*tr.table-row:nth-child(3n+2) {
+				color: green;
+			}*/
+
+			/* Make every third <tr> tag red */
+			/*tr.table-row:nth-child(3n+3) {
+				color: red;
+			}*/
+
+			/*
 			tr.table-row:hover {
 				background: yellow;
-			}*/
+			}
+			*/
 		</style>
 	</head>
 	<body>
@@ -45,9 +45,9 @@
 		<table class="half-size">
 			<thead>
 				<tr class="table-row">
-					<td>Class</td>
-					<td>Size</td>
-					<td>Enrolled</td>
+					<th>Class</th>
+					<th>Size</th>
+					<th>Enrolled</th>
 				</tr>
 			</thead>
 			<tbody>
