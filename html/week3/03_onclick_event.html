@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>The Onclick Event</title>
+
+    </head>
+
+    <body>
+    	<script>
+    		function printHelloWorld() {
+    			console.log('Hello World!');
+    		}
+
+    		function changeToHelloWorld() {
+    			document.getElementById('p2').innerHTML = 'Hello World';
+    		}
+    	</script>
+        <h1>There is an onclick event on the p tag.</h1>
+
+        <p id="p1" onclick="printHelloWorld();">When clicked, "Hello World" is printed.</p>
+        <p id="p2" onclick="changeToHelloWorld();">When clicked, I change to "Hello World"</p>
+
+    </body>
+</html>
