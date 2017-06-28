@@ -6,10 +6,10 @@
         <title>The onmouseenter and onmouseleave Event</title>
         <style>
 
-            .box {
+            /*.box {
                 border: 1px solid black;
                 padding: 10px;
-            }
+            }*/
         </style>
     </head>
 
@@ -22,11 +22,23 @@
     		function bye() {
     			document.getElementById('p1').innerHTML = 'Bye!';
     		}
-    	</script>
-        <h1>There is an ondblclick event on the p tag.</h1>
 
-        <p id="p1" class="box" onmouseenter="hello();" onmouseleave="bye()">When clicked, "Hello World" is printed.</p>
-        <p id="p2" class="box" ondblclick="changeToHelloWorld();">When clicked, I change to "Hello World"</p>
+            function go() {
+                var element = document.getElementById('p2');
+                element.innerHTML = 'GOOOOOOOOOOOOOOOOOOOO!';
+                element.style.color = 'green';
+            }
+
+            function stop() {
+                var element = document.getElementById('p2');
+                element.innerHTML = 'STOOOOOOOOOOOOOOOOOOOOOOOOP!';
+                element.style.color = 'red';
+            }
+    	</script>
+        <h1>There are some mouse events on the p tag.</h1>
+
+        <p id="p1" class="box" onmouseenter="hello();" onmouseleave="bye();">Something will happen when you put your mouse on or off this box</p>
+        <p id="p2" class="box" onmouseenter="go();" onmouseleave="stop();">Something different will happen when you put your mouse on or off this box</p>
 
     </body>
 </html>
