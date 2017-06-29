@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>The Keyboard Events</title>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function alertUser() {
+                alert("You pressed a key inside the input field");
+            }
+
+            function makeUppercase() {
+                var element = document.getElementById("keyUpEvent");
+                element.value = element.value.toUpperCase();
+            }
+        </script>
+        <h1>Keyboard Events</h1>
+
+        <div>
+            <h2>A function is triggered when the user is pressing a key in the input field.</h2>
+            <p>The onkeydown Event <input type="text" onkeydown="alertUser();"></p>
+            <p>The onkeyup Event <input id="keyUpEvent" type="text" onkeyup="alertUser();"></p>
+            <p>The onkeypress Event <input type="text" onkeypress="alertUser();"></p>
+        </div>
+
+    </body>
+</html>
