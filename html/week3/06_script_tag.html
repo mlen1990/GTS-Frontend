@@ -9,13 +9,10 @@
 
     <body>
     	<script>
-    		function printHelloWorld() {
-    			console.log('Hello World!');
-    		}
-
-    		function changeToHelloWorld() {
-    			document.getElementById('p2').innerHTML = 'Hello World';
-    		}
+    		function outputHelloWorld() {
+                var element = document.getElementById('helloWorld');
+                element.innerHTML = element.innerHTML + '<br>Hello World!';
+            }
     	</script>
     </body>
 </html>
