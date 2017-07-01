@@ -1,6 +1,17 @@
+img.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/*img.icon:hover {
+    opacity: 0.5;
+}*/
+
 /*.clickable {
     cursor: pointer;
 }*/
+
+
 
 
 

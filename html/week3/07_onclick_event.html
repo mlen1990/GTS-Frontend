@@ -9,18 +9,18 @@
 
     <body>
     	<script>
-    		function printHelloWorld() {
-    			console.log('Hello World!');
-    		}
-
-    		function changeToHelloWorld() {
-    			document.getElementById('p2').innerHTML = 'Hello World';
+    		function outputHelloWorld() {
+                var element = document.getElementById('helloWorld');
+    			element.innerHTML = element.innerHTML + '<br>Hello World!';
     		}
     	</script>
-        <h1>There is an onclick event on the p tag.</h1>
+        <h1>There is an onclick event on the img tag.</h1>
 
-        <p id="p1" class="clickable" onclick="printHelloWorld();">When clicked, "Hello World" is printed.</p>
-        <p id="p2" class="clickable" onclick="changeToHelloWorld();">When clicked, I change to "Hello World"</p>
-
+        <div>
+            <span>Click on this thumbs up button: </span><img class="clickable icon" src="../../images/thumbs_up.png" onclick="outputHelloWorld();">
+        </div>
+        <div>
+            <p id="helloWorld"></p>
+        </div>
     </body>
 </html>
