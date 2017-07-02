@@ -3,7 +3,7 @@
 
     <head>
 
-        <title>The onfocus Event</title>
+        <title>The onblur Event</title>
         <style>
             input {
                 width: 150px;
@@ -23,15 +23,21 @@
 
             function changeBackground(element) {
                 element.style.background = 'yellow';
-                // element.style.width = '200px';
-                // element.style.color = 'blue';
+                element.style.width = '200px';
+                element.style.color = 'blue';
+            }
+
+            function revertBackground(element) {
+                element.style.background = '';
+                element.style.width = '';
+                element.style.color = '';
             }
         </script>
-        <h1>Onfocus Event DEMO:</h1>
+        <h1>Onblur Event DEMO:</h1>
 
         <div>
             <p>The onkeydown Event <input type="text" onkeydown="makeUppercase(this);"></p>
-            <p>The onkeyup Event <input type="text" onkeyup="makeUppercase(this);"></p>
+            <p>The onkeyup Event <input type="text" onkeyup="makeUppercase(this);" onfocus="changeBackground(this);"></p>
         </div>
 
     </body>
