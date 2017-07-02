@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>The onfocus Event</title>
+        <style>
+            input {
+                width: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function alertUser() {
+                alert("You pressed a key inside the input field");
+            }
+
+            function makeUppercase(element) {
+                element.value = element.value.toUpperCase();
+            }
+
+            function changeBackground(element) {
+                element.style.background = 'yellow';
+                // element.style.width = '200px';
+                // element.style.color = 'blue';
+            }
+        </script>
+        <h1>Onfocus Events DEMO:</h1>
+
+        <div>
+            <p>The onkeydown Event <input type="text" onkeydown="makeUppercase(this);"></p>
+            <p>The onkeyup Event <input type="text" onkeyup="makeUppercase(this);"></p>
+        </div>
+
+    </body>
+</html>
