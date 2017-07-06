@@ -3,7 +3,10 @@ p {
     font-size: 30px;
 }
 
-
+img.large {
+    height: 300px;
+    width: 300px;
+}
 
 .hidden {
     display: none;
