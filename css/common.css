@@ -12,7 +12,12 @@ img.large {
     display: none;
 }
 
-
+.floating-box {
+    display: inline-block;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid green;
+}
 
 
 
