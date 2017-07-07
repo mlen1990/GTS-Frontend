@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Events</title>
+		<style>
+			.hidden {
+				display: none;
+			}
+
+			.button {
+				padding: 7px;
+				font-weight: bold;
+				color: white;
+				background: green;
+				cursor: pointer;
+				border: black;
+				opacity: 0.7;
+				border-radius: 10px;
+				font-family: arial;
+			}
+
+			.button:hover {
+				opacity: 1;
+			}
+		</style>
+		<script src="../../js/jquery-3.0.0.min.js"></script>
+		<script src="01_script_tag.js"></script>
+		<script>
+			$(document).ready(function() {
+			    $("span.button").click(function() {
+			    	$('.hidden').slideToggle(1000);
+			    });
+			});
+		</script>
+
+	</head>
+	<body>
+        <h1>Writing a long JS function:</h1>
+        <div>Many elements should appear if I click this button: <span class="button">Show</span></div>
+        <div>
+            <h3 id="hidden1" class="hidden">This is a normal Heading</h3>
+
+			<h3 id="hidden2" class="hidden">This heading is supposed to be red but is black</h3>
+			<h3 id="hidden3" class="hidden">This heading is supposed to be orange but is black</h3>
+			<h3 id="hidden4" class="hidden">This heading is supposed to be yellow but is black</h3>
+			<h3 id="hidden5" class="hidden">This heading is supposed to be green but is black</h3>
+			<h3 id="hidden6" class="hidden">This heading is supposed to be blue but is black</h3>
+			<h3 id="hidden7" class="hidden">This heading is supposed to be indigo but is black</h3>
+			<h3 id="hidden8" class="hidden">This heading is supposed to be violet but is black</h3>
+
+			<p id="hidden9" class="hidden">This is a normal paragraph.</p>
+
+			<p id="hidden10" class="hidden">This heading is supposed to be in red but is black</p>
+			<p id="hidden11" class="hidden">This heading is supposed to be in orange but is black</p>
+			<p id="hidden12" class="hidden">This heading is supposed to be in yellow but is black</p>
+			<p id="hidden13" class="hidden">This heading is supposed to be in green but is black</p>
+			<p id="hidden14" class="hidden">This heading is supposed to be in blue but is black</p>
+			<p id="hidden15" class="hidden">This heading is supposed to be in indigo but is black</p>
+			<p id="hidden16" class="hidden">This heading is supposed to be in violet but is black</p>
+        </div>
+	</body>
+</html>
